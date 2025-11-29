@@ -2,7 +2,6 @@
 <h1>Procedural Question Generator with Perlin Noise UI</h1>
 An infinite interview question generator where every UI element is procedurally generated using Perlin noise algorithms.
 
-🎨 Live Demo(Not yet Active) | 🐙 GitHub
 <img width="1020" height="635" alt="proceduralnoisetoUi" src="https://github.com/user-attachments/assets/dfcc62ab-7c99-41bb-bc03-c72023b7bd6d" />
 <img width="403" height="432" alt="perlinnoisebeforeweb" src="https://github.com/user-attachments/assets/c9a8e627-c761-42d4-ae39-eb7df89a998a" />
 
