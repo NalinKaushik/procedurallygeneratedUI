@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
+import CategorySelector from "./components/categorySelector";
+import InfiniteQuestionFeed from "./components/infiniteQuestionFeed";
+import NoiseVisualizer from "./components/noisevisulizer";
 import './App.css';
 
 function App() {
+  const [selectedCategory, setSelectedCategory] = useState(null);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="app">
+      {!selectedCategory ? (
+        <CategorySelector onSelectCategory={setSelectedCategory} />
+      ) : (
+        <InfiniteQuestionFeed 
+          category={selectedCategory} 
+          onBack={() => setSelectedCategory(null)}
+        />
+      )}
+        <NoiseVisualizer/>
+
+      </div>
   );
 }
 
