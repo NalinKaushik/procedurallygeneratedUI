@@ -1,4 +1,4 @@
-...............................................--------------------------....................................................
+
 <h1>Procedural Question Generator with Perlin Noise UI</h1>
 An infinite interview question generator where every UI element is procedurally generated using Perlin noise algorithms.
 
@@ -6,7 +6,7 @@ An infinite interview question generator where every UI element is procedurally 
 <img width="1020" height="635" alt="proceduralnoisetoUi" src="https://github.com/user-attachments/assets/dfcc62ab-7c99-41bb-bc03-c72023b7bd6d" />
 <img width="403" height="432" alt="perlinnoisebeforeweb" src="https://github.com/user-attachments/assets/c9a8e627-c761-42d4-ae39-eb7df89a998a" />
 
-🌟 What Makes This Special>
+<h2>🌟 What Makes This Special></h2>
 
 Instead of hand-crafting UI variations, this project uses Perlin noise to algorithmically generate:
 
@@ -24,8 +24,8 @@ Everything stays coherent and on-brand
 
 Result: Infinite visual variety from one algorithm. Every visit is unique.
 
-🚀 Key Features
-1. Procedural UI Generation
+<h2>🚀 Key Features</h2>
+<h3>1. Procedural UI Generation</h3>
 27 noise functions that map to UI properties
 
 Each function samples Perlin noise at different "dimensions"
@@ -34,7 +34,7 @@ Same algorithm, infinitely different outputs
 
 Seeded by category for consistency
 
-2. Infinite Question Generation
+<h3>2. Infinite Question Generation</h3>
 40+ question templates across 11 categories
 
 Parameterized with procedural values
@@ -43,7 +43,7 @@ Never generates the same question twice
 
 Categories: Array, String, System Design, Backend, AI, Database, Frontend, GameDev, Dynamic Programming, Graph, Concurrency
 
-3. Responsive & Beautiful
+<h3>3. Responsive & Beautiful</h3>
 Mobile-friendly infinite scroll
 
 Glassmorphic effects with procedural blur
@@ -52,33 +52,34 @@ Smooth animations and transitions
 
 Professional color schemes
 
-4. Interactive Noise Visualizer
+<h3>4. Interactive Noise Visualizer</h3>
 See the raw Perlin noise that drives everything
 
 Educational breakdown of noise → UI mapping
 
 Beautiful canvas-based visualization
 
-📦 Tech Stack
-text
-Frontend:
+<h2>📦 Tech Stack</h2>
+
+<h3>Frontend:</h3>
 ├── React 18+ (hooks, useMemo, useCallback)
 ├── Simplex Noise (procedural generation)
 ├── CSS3 (gradients, animations, flexbox/grid)
 └── React Router (navigation)
 
-Utilities:
+<h3>Utilities:</h3>
 ├── Perlin/Simplex noise for procedural values
 ├── HSL color generation
 ├── Responsive layout calculations
 └── Algorithmic animation timing
-🎯 Installation
+
+<h2>🎯 Installation</h2>
 Prerequisites
 Node.js 14+
 
 npm or yarn
 
-Setup
+<h3>Setup</h3>
 bash
 # Clone repository
 git clone https://github.com/your-username/procedural-question-generator.git
@@ -94,8 +95,8 @@ npm install simplex-noise
 npm start
 App runs on http://localhost:3000
 
-📁 Project Structure
-text
+<h2>📁 Project Structure</h2>
+
 src/
 ├── components/
 │   ├── CategorySelector.jsx      # Category buttons
@@ -111,7 +112,9 @@ src/
 │── App.css                   # Component styles + animations
 │
 └── App.jsx                        # Main app component
-🎨 How Procedural Generation Works
+
+
+<h2>🎨 How Procedural Generation Works</h2>
 The Algorithm
 Every UI property is generated from Perlin noise using this pattern:
 
@@ -144,8 +147,11 @@ Dimension	Property	Range
 23	Line height	1.4-1.8
 24	Letter spacing	-1 to 2px
 30-36	Background (color, gradient, blur)	Varies
-💡 Key Concepts
-Perlin Noise
+
+
+<h2>💡 Key Concepts</h2>
+
+<h3>Perlin Noise</h3>
 Smooth, organic randomness not pure random
 
 Seeded - same input = same output
@@ -154,7 +160,7 @@ Scalable - infinite zoom levels
 
 Natural-looking - no jarring transitions
 
-Procedural Design
+<h3>Procedural Design</h3>
 Algorithmic instead of manual
 
 Parametric - change ranges, get different outputs
@@ -163,7 +169,7 @@ Composable - combine multiple noise samples
 
 Scalable - infinite variations, constant code
 
-Infinite Scroll
+<h3>Infinite Scroll</h3>
 Lazy loads questions as user scrolls
 
 Generates new questions on-demand
@@ -172,7 +178,7 @@ Generates new questions on-demand
 
 No duplicate questions (procedurally unique IDs)
 
-🎮 Usage
+<h2>🎮 Usage</h2>
 View Questions by Category
 Open the app at http://localhost:3000
 
@@ -181,13 +187,6 @@ Click any category button (Array, String, System Design, etc.)
 See procedurally generated questions with unique layouts
 
 Scroll down to load more questions
-
-View Noise Visualization
-Click "View Noise 🎨" button (bottom right on home page)
-
-See the raw Perlin noise that generates the UI
-
-Read the educational breakdown of how noise maps to UI properties
 
 Customize Procedural Parameters
 Edit src/utils/noiseUIGenerator.js to change ranges:
@@ -205,7 +204,10 @@ export function generateFontSizeFromNoise(noise, index) {
   const size = noiseToRange(sizeNoise, 16, 24);      // Was 14-18px, now 16-24px
   return `${Math.round(size)}px`;
 }
-📊 Features Explained
+
+
+
+<h2>📊 Features Explained</h2>
 1. Category-Based Seeding
 Each category gets a unique personality from seeded noise:
 
@@ -251,7 +253,10 @@ const animation = generateAnimationFromNoise(noise, index);
 // Card 1: fade in for 0.45s with 0.1s delay
 // Card 2: fade in for 0.82s with 0.3s delay
 // Card 3: fade in for 0.61s with 0.05s delay
-🎨 Design System
+
+
+
+<h2>🎨 Design System</h2>
 Built with a procedural color palette:
 
 css
@@ -261,7 +266,7 @@ css
 --color-focus-ring: rgba(102, 126, 234, 0.4)
 All colors procedurally generated from Perlin noise, ensuring harmony.
 
-📈 Performance
+<h2>📈 Performance</h2>
 React Hooks for efficient re-renders
 
 useMemo for expensive calculations
@@ -282,7 +287,7 @@ Best Practices: 95+
 
 SEO: 90+
 
-🚀 Deployment
+<h2>🚀 Deployment</h2>
 Deploy to Vercel (Recommended)
 bash
 # Install Vercel CLI
@@ -298,26 +303,30 @@ npm run build
 npm install gh-pages --save-dev
 # Add to package.json: "homepage": "https://username.github.io/repo"
 npm run deploy
-📚 Learning Resources
-Perlin/Simplex Noise:
+
+
+
+<h2>📚 Learning Resources</h2>
+
+<h3>Perlin/Simplex Noise:</h3>
 
 Ken Perlin's Original Paper
 
 The Noise Handbook
 
-Procedural Generation:
+<h3>Procedural Generation:</h3>
 
 Procedural Content Generation Wiki
 
 Game Dev Procedural Generation
 
-React Patterns:
+<h3>React Patterns:</h3>
 
 React Hooks Documentation
 
 Performance Optimization
 
-🔄 Future Enhancements
+<h2>🔄 Future Enhancements</h2>
  Custom difficulty filters
 
  User solution submissions
@@ -338,7 +347,7 @@ Performance Optimization
 
  AI-generated hint system
 
-🤝 Contributing
+<h2>🤝 Contributing</h2>
 Contributions welcome! Areas to improve:
 
 Add more question templates
@@ -360,7 +369,7 @@ bash
 📝 License
 MIT License - feel free to use for personal or commercial projects.
 
-🙋 FAQ
+<h2>🙋 FAQ</h2>
 Q: How is this different from a regular question generator?
 A: Every UI element is procedurally generated. The layout, colors, shadows, animations, typography—everything varies algorithmically while staying cohesive.
 
@@ -376,7 +385,7 @@ A: Modify generateQuestions() in questionGenerator.js to use fixed values instea
 Q: Can I add dark mode?
 A: Yes! Create a procedural dark theme by adjusting HSL ranges. Currently supports system preference detection.
 
-👨‍💻 Author
+<h2>👨‍💻 Author</h2>
 Built by Nalin Kaushik
 
 🔗 LinkedIn:(https://www.linkedin.com/in/nalin-kaushik-245a52230/)
@@ -385,7 +394,7 @@ Built by Nalin Kaushik
 
 🌐 Portfoli:(https://iamdev.my-style.in)
 
-📞 Support
+<h2>📞 Support</h2>
 Have questions? Issues? Feature requests?
 
 Open an Issue on GitHub
@@ -393,10 +402,10 @@ Open an Issue on GitHub
 Email: nalinkaushik4184@gmail.com
 
 
-⭐ Show Your Support
+<h2>⭐ Show Your Support</h2>
 If this project helped you or you find it interesting, please give it a ⭐ on GitHub!
 
-🎓 What I Learned
+<h2>🎓 What I Learned</h2>
 Building this project taught me:
 
 ✅ Advanced React patterns and performance optimization
@@ -413,4 +422,3 @@ Building this project taught me:
 
 ✅ Project structure and code organization
 
-...................................................---------------------.....................................................
