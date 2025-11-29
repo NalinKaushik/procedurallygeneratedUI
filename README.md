@@ -277,34 +277,6 @@ Canvas-based noise visualization (not WebGL)
 
 Mobile optimized responsive grid
 
-Lighthouse scores:
-
-Performance: 92+
-
-Accessibility: 90+
-
-Best Practices: 95+
-
-SEO: 90+
-
-<h2>🚀 Deployment</h2>
-Deploy to Vercel (Recommended)
-bash
-# Install Vercel CLI
-npm install -g vercel
-
-# Deploy
-vercel
-Vercel handles everything. Live in seconds.
-
-Deploy to GitHub Pages
-bash
-npm run build
-npm install gh-pages --save-dev
-# Add to package.json: "homepage": "https://username.github.io/repo"
-npm run deploy
-
-
 
 <h2>📚 Learning Resources</h2>
 
